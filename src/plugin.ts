@@ -45,7 +45,7 @@ export
         }, -1);
 
         return new DisposableDelegate(() => {
-            if (nb.rendermime) {
+            if (nb.content.rendermime) {
                 nb.content.rendermime.removeMimeType(ROOT_EXEC_MIME_TYPE);
             }
         });
