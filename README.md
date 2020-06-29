@@ -1,3 +1,9 @@
+---
+noteId: "2bda2cd0b9b111eaa214a3ec0b5026d0"
+tags: []
+
+---
+
 # jupyterlab_rootjs
 
 jupyter lab support for CERN ROOT JS

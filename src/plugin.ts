@@ -32,13 +32,13 @@ export
     class NBWidgetExtension implements INBWidgetExtension {
     createNew(nb: NotebookPanel, context: DocumentRegistry.IContext<INotebookModel>): IDisposable {
 
-        nb.rendermime.addFactory({
+        nb.content.rendermime.addFactory({
             safe: false,
             mimeTypes: [ROOT_LOAD_MIME_TYPE],
             createRenderer: (options) => new ROOTJSLoad(options)
         }, -1);
 
-        nb.rendermime.addFactory({
+        nb.content.rendermime.addFactory({
             safe: false,
             mimeTypes: [ROOT_EXEC_MIME_TYPE],
             createRenderer: (options) => new ROOTJSExec(options)
@@ -46,7 +46,7 @@ export
 
         return new DisposableDelegate(() => {
             if (nb.rendermime) {
-                nb.rendermime.removeMimeType(ROOT_EXEC_MIME_TYPE);
+                nb.content.rendermime.removeMimeType(ROOT_EXEC_MIME_TYPE);
             }
         });
     }

@@ -1,6 +1,6 @@
 {
   "name": "jupyterlab_rootjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "jupyter lab extension to support CERN ROOT JS",
   "keywords": [
     "jupyter",
@@ -13,9 +13,9 @@
     "physics",
     "particle"
   ],
-  "homepage": "https://github.com/jdbrice/jupyterlab_rootjs",
+  "homepage": "https://github.com/benhaotang/jupyterlab_rootjs",
   "bugs": {
-    "url": "https://github.com/jdbrice/jupyterlab_rootjs/issues"
+    "url": "https://github.com/benhaotang/jupyterlab_rootjs/issues"
   },
   "license": "GPL-3.0-or-later",
   "author": "Daniel Brandenburg",
@@ -27,7 +27,7 @@
   "types": "lib/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jdbrice/jupyterlab_rootjs.git"
+    "url": "https://github.com/benhaotang/jupyterlab_rootjs.git"
   },
   "scripts": {
     "build": "tsc",
@@ -36,12 +36,12 @@
     "prepare": "npm run clean && npm run build"
   },
   "dependencies": {
-    "@jupyterlab/application": "^0.17.2",
-    "@jupyterlab/apputils": "^0.17.2",
-    "@jupyterlab/docregistry": "^0.17.2",
-    "@jupyterlab/notebook": "^0.17.2",
+    "@jupyterlab/application": "^1.0.0",
+    "@jupyterlab/apputils": "^1.0.0",
+    "@jupyterlab/docregistry": "^1.0.0",
+    "@jupyterlab/notebook": "^1.0.0",
     "@jupyterlab/rendermime-interfaces": "^1.1.2",
-    "@jupyterlab/services": "^3.0.3",
+    "@jupyterlab/services": "^4.0.0",
     "@phosphor/coreutils": "^1.3.0",
     "@phosphor/widgets": "^1.6.0"
   },
