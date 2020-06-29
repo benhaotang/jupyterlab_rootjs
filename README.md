@@ -4,6 +4,10 @@ tags: []
 
 ---
 
+**Try to port the original work to work with new version of Jupyter**
+
+**NOT YET FINISHED!!!**
+
 # jupyterlab_rootjs
 
 jupyter lab support for CERN ROOT JS
@@ -14,12 +18,6 @@ jupyter lab support for CERN ROOT JS
 * JupyterLab
 
 ## Installation
-
-```bash
-jupyter labextension install jupyterlab_rootjs
-```
-
-## Development
 
 For a development install (requires npm version 4 or later), do the following in the repository directory:
 
